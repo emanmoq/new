@@ -1,4 +1,5 @@
 jQuery(function ($) {
+  new WOW().init();
         filter_container = $("#projectGallery");
   
         filter_container.children().css('position', 'relative');
@@ -106,6 +107,10 @@ jQuery(function ($) {
               }
             
               return false;
+            });
+           
+            $('.up a').on('click', function () {
+              $('html, body').animate({ scrollTop: $(this.hash).offset().top  }, 1000);
             });
             $('.TestiMonialsCarusel').owlCarousel({
               loop:true,

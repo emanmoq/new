@@ -184,8 +184,16 @@ top:50px;
 .servicesSec{
     margin-top:86px;
 }
+.serviceCont:hover .serviceIcon{
+    transform: scale(1.2);
+    transition: .5s all;
+}
+.serviceCont:hover h4{
+    color:#5842dd;
+}
 .serviceIcon{
     margin:0 auto;
+    transition: .5s all;
 }
 .serviceIcon{
     color:white;
@@ -247,14 +255,26 @@ top:50px;
     position: relative;
 }
 #projectTabs .active:before{
-position: absolute;
-content: "";
-bottom:-1px;
-left:0;
-height:2px;
 width:100%;
-background-color: #6d41e0;
 }
+#projectTabs li a{
+    position: relative;
+}
+#projectTabs li a:before{
+    position: absolute;
+    content: "";
+    bottom:-1px;
+    left:0;
+    height:2px;
+    width:0;
+    background-color: #6d41e0;
+    transition: .5s all;
+    }
+#projectTabs li a:hover{
+    color:#6d41e0;}
+    #projectTabs li a:hover:before{
+      width:100%;
+    transition:.5s all;  }
 .galleryItemImg img{
 border-radius: 30px;
 width:100%;
@@ -454,10 +474,10 @@ transition: .5s all;
     padding:30px 0;
     color:white;
 }
-#join h4{
+#join h2{
     font-size: 31px;
-    font-weight: 700;
- 
+    font-weight: 500;
+    color: #ffffff;
   }
 #join p{
     opacity: 0.66;
@@ -601,7 +621,7 @@ color:#5842dd
         border: solid 1px #6d41e0;
         box-shadow: none;
     }
-    .form-control.phoneEmail{
+    .form-group.phoneEmail{
         width:47%;
         display: inline-block;
     }
@@ -794,6 +814,9 @@ transition: .5s all;
     .nav-link.active:before{
         display: none;
     }
+    #counter{
+        padding:20px 0;
+    }
     .logo {
         width: 159px;}
         .HeroTitle {
@@ -811,4 +834,33 @@ transition: .5s all;
     .scrollNav{
         height:65px;
     }
+    .owl-nav{
+        display: none;
+    }
+    #TestiMonials{
+        margin-top:-70%;
+    }
+    .testCar{
+margin-top:-38%;
+    }
+    #Team{
+        padding-top:50px;
+    }
+   .form-control.phoneEmail{
+        width:100%;
+
+    }
+.contactForm{
+    margin-top:20px;
+}
+.listTitle{
+    margin-top:10px;
+}
+.up {
+
+    right: 31px;
+}
+.firstform{
+    margin-right:0;
+}
 }
