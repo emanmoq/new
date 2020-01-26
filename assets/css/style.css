@@ -306,13 +306,9 @@ height:100%;
     position: relative;
     z-index: -1;
     padding-top:350px;
-    padding-bottom:250px;
+    padding-bottom:155px;
 }
-.testCar{
-    background-color: transparent;
-    position: absolute;
-    bottom:0;
-}
+
 .carouselItem{
     border-radius: 30px;
     box-shadow: 0px 10px 10px 0 rgba(235, 235, 235, 0.5);
@@ -351,42 +347,44 @@ height:100%;
 .testiDesc{
     margin-top:22px;
 }
-.TestiMonialsCarusel{
-    margin-top:45px;
-    margin-bottom:-50%;
+.testCar{
+    background-color: transparent;
+    z-index: 1;
+    margin-top:-10%;
 }
-.TestiMonialsCarusel  .owl-nav button{
+.TestiMonialsCarusel{
+
+}
+ .owl-nav{
+    position: absolute;
+    top:45%;
+    width:100%;
+}
+ .owl-nav button{
     color: #6d41e0 !important;
+    position: absolute;
     border:1px solid #c4c4c4 !important;
     border-radius:50%;
     width:43px;
     height:43px;
     line-height: 22px;
-    position: absolute;
-    left:0
-}
-.TestiMonialsCarusel  .owl-nav{
-    position: absolute;
-    top: 50%;
+    background-color:white !important;
 }
 .TestiMonialsCarusel .owl-stage-outer{
     padding:30px 5px
 }
-
-.TestiMonialsCarusel  .owl-nav button span{
-
+.owl-nav button span{
     font-size: 28px !important;
 }
-.TestiMonialsCarusel .owl-nav button:hover{
+.owl-nav button:hover {
   background-color:#6d41e0 !important;
   color:white !important;
-
 }
-.TestiMonialsCarusel .owl-nav .owl-prev{
-left:0 !important;
+.owl-nav .owl-prev{
+left:-2% !important;
 }
-.TestiMonialsCarusel .owl-nav .owl-next{
-    right:0 !important;
+.owl-nav button.owl-next{
+    right: -2%!important;
     }
     .TeamcarouselItem{
         margin-top:45px;
