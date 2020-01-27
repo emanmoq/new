@@ -1,4 +1,5 @@
 jQuery(function ($) {
+
   new WOW().init();
         filter_container = $("#projectGallery");
   
@@ -112,6 +113,7 @@ jQuery(function ($) {
             $('.up a').on('click', function () {
               $('html, body').animate({ scrollTop: $(this.hash).offset().top  }, 1000);
             });
+            
             $('.TestiMonialsCarusel').owlCarousel({
               loop:true,
               margin:20,
@@ -133,7 +135,7 @@ jQuery(function ($) {
               loop:true,
               margin:20,
               nav:true,
-              animateOut: 'fadeOut',
+              animateIn: 'flipInX',
             responsive:{
             0:{
               items:1
@@ -183,11 +185,5 @@ jQuery(function ($) {
               disableOnMobile: false,
               nativeOnMobile: false
             });
-            if ($(window).width() < 1024) {
-              $('.wow').removeClass('animate');
-              $('.wow').removeClass('wow');
-              
-            }
-     
 });
 
