@@ -79,6 +79,53 @@ body{
     width:30%;
     transition: .5s ease-in-out;
 }
+.mobileNav{
+    padding:15 5px;
+}
+.mobileMenu{
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+}
+button.navbar-toggler {
+    position: relative;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 0;
+    opacity: .7;
+    border:1px solid white;
+    text-align: center;
+
+}
+#headerJop .mobileMenu i, header .mobileMenu i{
+    background-color: white;
+}
+.mobileMenu i,header.scrollNav .mobileMenu i{
+    background-color: #8665fc;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+.mobileMenu i {
+    animation: outT 0.8s backwards;
+    animation-direction: reverse;
+}
+.mobileMenu i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;}
+    .mobileMenu i:nth-child(3) {
+        -webkit-animation: outBtm 0.8s backwards;
+        animation: outBtm 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
 .laptop,.person1,.person2,.person3{
     position: absolute;
     width:41%;
@@ -617,6 +664,7 @@ color:#5842dd
         border-radius: 10px;
         background-color: #ffffff;
     }
+
     .form-control:focus{
         border: solid 1px #6d41e0;
         box-shadow: none;
@@ -633,6 +681,7 @@ color:#5842dd
         font-size: 12px;
         font-weight: 500;
         color: #677294;}
+
         textarea{
             resize: none;
             opacity: 0.68;
@@ -808,17 +857,156 @@ transition: .5s all;
     font-size: 12px;
     font-weight: 500;
 }
+#headerJop{
+    background-image:url("../images/2H.png");
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Avenir';
+    position: relative;
+    padding-bottom:88px;
+}
+
+.Submitjob{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.15;
+    color: #ffffff;
+    margin-top:40px;
+}
+.subLink{
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top:10px;
+}
+.subLink a{
+    color:white;
+}
+.formContainer{
+padding-top:42px;
+padding-bottom:60px;
+}
+.formTitle{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.33;
+    color: #222d39;
+    margin-bottom:10px;
+}
+form h6{
+    font-size: 20px;
+    font-weight: 900;;
+    color: #677294;
+    margin-bottom:19px;
+    margin-top:25px;
+}
+.jobForm .form-group.phoneEmail {
+    width:48%;
+}
+.Date{
+
+    background-image: linear-gradient(to bottom, #f4f4f4, #ffffff);
+  
+}
+.cv{
+    font-size: 12px;
+    font-weight: 500;
+    color: #677294;
+}
+.jobForm .form-control{
+    border: solid 1px #ebebeb;
+    
+}
+.selectric-wrapper{
+    border: solid 1px #ebebeb;
+background-image: linear-gradient(to bottom, #f4f4f4, #ffffff);
+border-radius: 10px;
+}        .selectric .label{
+    opacity: 0.68;
+    font-size: 12px;
+    font-weight: 500;
+    color: #677294;
+}
+.selectric-items li:hover {
+    background-color:#f4f4f4;
+    color: rgba(0,0,0,.6);
+}
+.selectric-items li.selected {
+    color: rgba(0,0,0,.6);
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    width: 104px;
+    padding:10px;
+    border-radius: 18px;
+  border: solid 1px #ebebeb;
+  font-size: 12px;
+  font-weight: 500;
+  color: #677294;
+  margin-left:15px;
+text-align: center;
+cursor: pointer;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color:#853fe4;
+    color:white;
+}
+.cvGroup{
+    margin-top:27px;
+    margin-bottom:30px;
+}
+.cap{
+    width:300px;
+    margin-bottom:20px;
+}
+.jobForm .sendMessage{
+    width: 151px;
+}
 @media(min-width:360px) and (max-width:767px){
     .navbar{
-        padding:10px;}
+        padding:10px;
+    }
+    .navbar .navbar-collapse{
+    width: 108%;
+    position: absolute;
+    background-color: white;
+    top: -66px;
+    right: -5%;
+        z-index: 30;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        transition: all 0.2s;
+        transform: translateZ(0);
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+    .navbar-collapse .nav-link{
+        color:#8665fc !important;
+    }
+    .close{
+        position: absolute;
+        right: 5%;
+    }
     .nav-link.active:before{
+        display: none;
+    }
+    .verticalSocial{
         display: none;
     }
     #counter{
         padding:20px 0;
     }
     .logo {
-        width: 159px;}
+        width: 150px;}
         .HeroTitle {
             font-size: 24px;}
             #heroSection{
@@ -832,7 +1020,7 @@ transition: .5s all;
     font-size:38px;
     }
     .scrollNav{
-        height:65px;
+        height:75px;
     }
     .owl-nav{
         display: none;
@@ -846,9 +1034,8 @@ margin-top:-38%;
     #Team{
         padding-top:50px;
     }
-   .form-control.phoneEmail{
+   .form-group.phoneEmail{
         width:100%;
-
     }
 .contactForm{
     margin-top:20px;
@@ -863,4 +1050,21 @@ margin-top:-38%;
 .firstform{
     margin-right:0;
 }
+.formTitle {
+    font-size: 23px;}
+    .jobForm .form-group.phoneEmail{
+        width:100%;
+    }
+    .formContainer {
+        padding-top: 20px;
+        padding-bottom:0;
+      
+    }
+    #headerJop{
+        padding-bottom:20px;
+    }
+    .Submitjob{
+        margin-top:15px;
+    }
+
 }
