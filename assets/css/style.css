@@ -995,7 +995,7 @@ cursor: pointer;
     }
     .close{
         position: absolute;
-        right: 5%;
+        right: 10%;
     }
     .nav-link.active:before{
         display: none;
