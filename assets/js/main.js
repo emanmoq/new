@@ -133,6 +133,7 @@ jQuery(function ($) {
               loop:true,
               margin:20,
               nav:true,
+              animateOut: 'fadeOut',
             responsive:{
             0:{
               items:1
@@ -142,7 +143,8 @@ jQuery(function ($) {
             },
             1000:{
               items:4
-            }
+            },
+           
             }
             });
             $('.BlogCarousel').owlCarousel({
@@ -181,6 +183,11 @@ jQuery(function ($) {
               disableOnMobile: false,
               nativeOnMobile: false
             });
+            if ($(window).width() < 1024) {
+              $('.wow').removeClass('animate');
+              $('.wow').removeClass('wow');
+              
+            }
      
 });
 

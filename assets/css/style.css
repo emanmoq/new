@@ -81,6 +81,7 @@ body{
 }
 .mobileNav{
     padding:15 5px;
+    width:100%;
 }
 .mobileMenu{
     cursor: pointer;
@@ -1067,4 +1068,53 @@ margin-top:-38%;
         margin-top:15px;
     }
 
+}
+@media(min-width:767px) and (max-width:1024px){
+    .collapse.navbar-collapse{
+        display: contents !important;
+    }
+    .navbar-nav{
+        display:inline-block !important;
+        padding-left: 69px;
+    }
+     .navbar-nav .nav-item{
+      display: inline-block !important;
+  }
+  .logo{
+      width:148px;
+  }
+  .scrollNav {
+      padding:20px 0;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link{
+      padding: 5px;
+      font-size:11px;
+  }
+  .scrollNav .navbar{
+      padding:5px;
+  }
+  #TestiMonials{
+      padding-top:200px;
+      margin-top: -28%;
+  }
+  #Team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contactForm .form-group.phoneEmail{
+    width:100%;
+}
+.contactForm .firstform{
+margin-right:0;
+}
+  .HeroTitle{
+font-size:35px;
+  }
+  .navbar{
+      padding-top:20px;
+      padding-bottom:20px;
+  }
+  .bigBackground{
+      width:69%;
+  }
 }
