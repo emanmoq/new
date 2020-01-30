@@ -47,7 +47,7 @@ body{
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
    box-shadow: 0 2px 13px 0 rgba(156, 0, 65, 0.04);
-   background-image: linear-gradient(233deg, #853fe4 122%, #5842dd 10%);
+   background-image: linear-gradient(to top, #853FE4, #5842dd );
 }
 .verticalSocial ul li:hover a{
     color:white;
@@ -178,10 +178,10 @@ top:50px;
 }
 .contactBtn{
  
-    box-shadow: 0 2px 35px 0 rgba(91, 87, 208, 0.7);
+    box-shadow: 0 2px 8px 0 rgba(91, 87, 208, 0.7);
     width: 151px;
     border-radius: 24.5px;
-    background-image: linear-gradient(250deg, #853fe4 121%, #5842dd 12%);
+    background-image: linear-gradient(250deg, #853fe4 , #5842dd);
     font-weight: 900;
     color: #ffffff;
     text-align: center;
