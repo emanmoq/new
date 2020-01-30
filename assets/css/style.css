@@ -135,20 +135,20 @@ button.navbar-toggler {
     top:16%;
 }
 .person1{
-    top: 50%;
     right: 18%;
     width: 25%;
+    animation:slide 5s infinite;
 }
 .person2{
-    top: 30%;
     width: 12%;
     left: 24%;
+    animation:slide2 5s infinite;
 
 }
 .person3{
     left:23%;
-    top:52%;
     width:11%;
+    animation:slide3 5s infinite;
 }
 
 .bigBackground{
@@ -972,6 +972,42 @@ cursor: pointer;
 .jobForm .sendMessage{
     width: 151px;
 }
+@keyframes slide {
+  0%{
+      top:45%;
+  }
+  50%{
+      top:50%;
+  }
+  100%{
+    top:45%;
+}
+
+  }
+  @keyframes slide2{
+    0%{
+        top:25%;
+    }
+    50%{
+        top:30%;
+    }
+    100%{
+      top:25%;
+  }
+  
+    }
+    @keyframes slide3{
+        0%{
+            top:52%;
+        }
+        50%{
+            top:45%
+        }
+        100%{
+          top:52%;
+      }
+      
+        }
 @media(min-width:360px) and (max-width:767px){
     .navbar{
         padding:10px;
