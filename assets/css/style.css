@@ -137,18 +137,18 @@ button.navbar-toggler {
 .person1{
     right: 18%;
     width: 25%;
-    animation:slide 5s infinite;
+    animation:slide 7s infinite;
 }
 .person2{
     width: 12%;
     left: 24%;
-    animation:slide2 5s infinite;
+    animation:slide2 7s infinite;
 
 }
 .person3{
     left:23%;
     width:11%;
-    animation:slide3 5s infinite;
+    animation:slide3 7s infinite;
 }
 
 .bigBackground{
