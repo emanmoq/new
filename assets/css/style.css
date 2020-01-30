@@ -1,5 +1,5 @@
 @font-face{
-    font-family: 'Avenir';
+    font-family: Avenir;
     src: url("../Fonts/AEH.ttf");
 }
 
@@ -47,7 +47,7 @@ body{
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
    box-shadow: 0 2px 13px 0 rgba(156, 0, 65, 0.04);
-   background-image: linear-gradient(to top, #853FE4, #5842dd );
+   background-image: linear-gradient(to bottom right, #853FE4, #5842dd );
 }
 .verticalSocial ul li:hover a{
     color:white;
@@ -132,23 +132,24 @@ button.navbar-toggler {
     width:41%;
     z-index: 1;
     right:29%;
-    top:16%;
+    animation:slide0 10s infinite;
+
 }
 .person1{
     right: 18%;
     width: 25%;
-    animation:slide 7s infinite;
+    animation:slide 10s infinite;
 }
 .person2{
     width: 12%;
     left: 24%;
-    animation:slide2 7s infinite;
+    animation:slide2 10s infinite;
 
 }
 .person3{
     left:23%;
     width:11%;
-    animation:slide3 7s infinite;
+    animation:slide3 10s infinite;
 }
 
 .bigBackground{
@@ -158,6 +159,24 @@ button.navbar-toggler {
     width:58%;
     z-index: -1;
 }
+.circle{
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    position: absolute;
+}
+.green{
+    background-color: #008002;
+    animation: slideDot0 4s infinite;
+}
+.green1{
+animation: scaleIn 4s infinite;
+top:127px;
+left:197px;
+
+
+}
+
 .bigBackground:hover {
 top:50px;
 }
@@ -236,7 +255,7 @@ top:50px;
     transform: scale(1.2);
     transition: .5s all;
 }
-.serviceCont:hover h4{
+.serviceCont:hover span{
     color:#5842dd;
 }
 .serviceIcon{
@@ -249,34 +268,41 @@ top:50px;
     text-align: center;
     width:44px;
     height:44px;
+    padding:16px 0;
     background-image: linear-gradient(135deg, #255ef5, #8665fc);
     object-fit: contain;
-    box-shadow: 0 2px 42px 0 rgba(91, 87, 208, 0.7);
+    box-shadow: 0 2px 5px 0 rgba(91, 87, 208, 0.7);
 }
-.serviceCont h4{
+
+.serviceCont span{
     font-size: 18px;
-    font-weight: 700;
-    color: #222d39;
+    color: #222D39;
     margin-top:15px;
     margin-bottom: 10px;
+    font-weight: 400;
 }
-.serviceIcon i{
-    font-size: 14px;
-    line-height: 44px;
-    opacity: .9;
+.serviceCont p{
+   color: #677294;
+   font-size:14px;
+   line-height: 2;
+   font-weight: 500;
+}
+.serviceIcon .serviceImg{
+  width:36%;
+    margin: auto;
 }
 .serviceCont2 .serviceIcon {
     background-image: linear-gradient(135deg, #26bfbd, #5bdac0);
-    box-shadow: 0 2px 42px 0 rgba(124,231,210,.7)
+    box-shadow: 0 2px 5px 0 rgba(124,231,210,.7)
 }
 .serviceCont3 .serviceIcon{
-    background-image: linear-gradient(135deg, #ff6480 0%, #f22e63 100%);
-    box-shadow: 0 2px 42px 0 rgba(241,110,145,.7)
+    background-image: linear-gradient(135deg, #ff6480 , #f22e63 );
+    box-shadow: 0 2px 5px 0 rgba(241,110,145,.7)
 
 }
 .serviceCont4 .serviceIcon{
     background-image: linear-gradient(135deg, #ffab86, #ffd969);
-    box-shadow: 0 2px 42px 0 rgba(245,217,135,.7)
+    box-shadow: 0 2px 5px 0 rgba(245,217,135,.7)
 
 }
 #ourProjects{
@@ -470,7 +496,7 @@ left:-2% !important;
         padding-bottom:92px;
     }
     .TeamcarouselItem figure img{
-        height:100%;
+        width:100%;
     }
     .TeamcarouselItem figure:before{
 content:"";
@@ -539,10 +565,12 @@ transition: .5s all;
     color:white;
     margin-top:14px;
     text-align: center;
-    padding:13px 33px;
+  width:123px;
+  height:49px;
     font-size:15px;
     font-weight: 500;
     transition: .5s all;
+    line-height: 36px;
   
 }
 .joinBtn:hover{
@@ -561,6 +589,13 @@ transition: .5s all;
     border:0;
 }
 
+.cardImg{
+    width:100%;
+    height:165px;
+    overflow: hidden;
+    border-radius: 30px;
+
+}
 .BlogItem .card-body{
     padding:0
 }
@@ -577,13 +612,10 @@ margin-top:8px;
     color: #677294;
     margin-right:15px;
 }
-.card img{ 
 
-border-radius: 30px;
-}
 .card-title{
     font-size: 19px;
-    font-weight: 900;
+    font-weight: 400;
     line-height: 1.53;
     color: #222d39;
     margin-bottom:4px;
@@ -971,6 +1003,41 @@ cursor: pointer;
 }
 .jobForm .sendMessage{
     width: 151px;
+}
+@keyframes scaleIn {
+    0% {
+      transform: scale(.5,.5);
+      opacity: .5;
+    }
+    100% {
+      transform: scale(2.5, 2.5);
+      opacity:0;
+    }
+  }
+  @keyframes slideDot0{
+      0%{
+        left:193px;
+        top:127px
+      }
+      50%{
+        left:180px;
+        top:130px
+
+      }   0%{
+        left:193px;
+        top:127px;
+      }
+  }
+@keyframes slide0 {
+    0%{
+        top:25%;
+    }
+    50%{
+        top:16%;
+    }
+    100%{
+      top:25%;
+  }
 }
 @keyframes slide {
   0%{
