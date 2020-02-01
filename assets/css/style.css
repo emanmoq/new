@@ -133,7 +133,6 @@ button.navbar-toggler {
     z-index: 1;
     right:29%;
     animation:slide0 10s infinite;
-
 }
 .person1{
     right: 18%;
@@ -164,17 +163,46 @@ button.navbar-toggler {
     height:12px;
     border-radius: 50%;
     position: absolute;
+    animation: move-the-circle 10s infinite;
 }
 .green{
     background-color: #008002;
-    animation: slideDot0 4s infinite;
 }
 .green1{
-animation: scaleIn 4s infinite;
 top:127px;
 left:197px;
+}
+.green2{
+    top:262px;
+    left:0;
+}
+.red{
+    background-color:#ff0000;
+    top:200px;
+    left:40%;
+    width:9px;
+    height:9px;
+}
+.yellow{
+    background-color: #ffa500;;
 
+    top:244px;
+    left:187px;
+}
+.yellow2{
+    width:9px;
+    height:9px;
+background-color: #ffc64d;
+top:60%;
+left:35%;
 
+}
+.pink{
+    background-color:#FFC0CB;
+    width:9px;
+    height:9px;
+    left:50%;
+    top:70%;
 }
 
 .bigBackground:hover {
@@ -191,7 +219,7 @@ top:50px;
 }
 .heroDetails{
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: #677294;
 
 }
@@ -1004,29 +1032,26 @@ cursor: pointer;
 .jobForm .sendMessage{
     width: 151px;
 }
-@keyframes scaleIn {
-    0% {
-      transform: scale(.5,.5);
-      opacity: .5;
-    }
-    100% {
-      transform: scale(2.5, 2.5);
-      opacity:0;
-    }
-  }
-  @keyframes slideDot0{
-      0%{
-        left:193px;
-        top:127px
-      }
-      50%{
-        left:180px;
-        top:130px
 
-      }   0%{
-        left:193px;
-        top:127px;
-      }
+
+
+  @keyframes move-the-circle {
+    0% {
+      transform: translatex(0);
+      transform: translateY(0);
+    }
+    50% {
+      transform: translate(20px,-10px)
+    
+    }
+    70% {
+      transform: translate(10px, -5px)
+   
+    }
+      100% {
+          transform: translate(0, 0);
+       
+        }
   }
 @keyframes slide0 {
     0%{
