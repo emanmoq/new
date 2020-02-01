@@ -171,25 +171,24 @@ button.navbar-toggler {
     background-color: #008002;
 }
 .green1{
-top:127px;
-left:197px;
+top:0;
+left:13%;
 }
 .green2{
-    top:262px;
+    top:30%;
     left:0;
 }
 .red{
     background-color:#ff0000;
-    top:200px;
+    top:20%;
     left:40%;
     width:9px;
     height:9px;
 }
 .yellow{
     background-color: #ffa500;;
-
-    top:244px;
-    left:187px;
+    top:27%;
+        left:12%;
 }
 .yellow2{
     width:9px;
@@ -218,6 +217,7 @@ top:50px;
 #heroSection{
     padding-top:150px;
     padding-bottom:128px;
+    position: relative;
 }
 .heroDetails{
     font-size: 16px;
@@ -410,7 +410,7 @@ height:100%;
     animation-duration: 1s;
     background: rgb(255, 255, 255) !important;
     position: fixed !important;
-    box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 7px 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
     transition: 1s all;
     left: 0;
     width:100%;
@@ -421,6 +421,7 @@ height:100%;
 }
 .scrollNav .navbar-expand-lg .navbar-nav .nav-link {
     color:#5842dd;
+    font-size:16px;
 }
 
 .scrollNav .navbar-expand-lg .navbar-nav .nav-link:before,.scrollNav .nav-link.active:before{
@@ -797,7 +798,7 @@ color:#5842dd
             height: 8px;
             background-color: #d8d8d8;
             border-radius: 50%;
-            margin-right:14px;
+            margin-right:16px;
         }
         .ConsultCarousel .owl-dots .owl-dot.active{
             background-color: #6d41e0;
@@ -1049,9 +1050,14 @@ cursor: pointer;
     0% {
 		transform: translate(0px,0);
 	}
-	50% {
+  35% {
 		transform: translate(60px,30px);
     }
+    70%{
+        transform: translate(60px,15px);
+
+    }
+
 
 	100% {
 		transform: translate(0px,0);
