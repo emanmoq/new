@@ -120,6 +120,7 @@ jQuery(function ($) {
                 margin:20,
                 nav:true,
                 dots:false,
+                navText :['<i class="lni-chevron-left"></i>','<i class="lni-chevron-right"></i>'],
               responsive:{
               0:{
                 items:1
@@ -137,6 +138,8 @@ jQuery(function ($) {
                 margin:20,
                 nav:true,
                 animateIn: 'flipInX',
+                navText :['<i class="lni-chevron-left"></i>','<i class="lni-chevron-right"></i>'],
+
               responsive:{
               0:{
                 items:1
@@ -167,6 +170,7 @@ jQuery(function ($) {
               }
               });
               $('.ConsultCarousel').owlCarousel({
+                autoplay:true,
                 loop:true,
                 margin:40,
                 dots:true,

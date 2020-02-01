@@ -1,8 +1,11 @@
 @font-face{
     font-family: Avenir;
-    src: url("../Fonts/AEH.ttf");
+    src: url("../Fonts/AEH.otf");
 }
-
+@font-face{
+    font-family: Avenir-M;
+    src: url("../Fonts/AvenirLTStd-Medium.otf");
+}
 ul{
     margin:0;
     padding:0;
@@ -30,8 +33,7 @@ img{
     width:100%;
 }
 body{
-    font-family: 'Avenir';
-
+    font-family: Avenir;
 }
 .verticalSocial{
     position: fixed;
@@ -267,14 +269,15 @@ top:50px;
 }
 .sectionTitle{
     font-size: 31px;
-    font-weight: 900;
-    color: #222d39;
+    font-weight: 400;
+    color: #222D39;
 }
 .sectionPar{
     font-size: 16px;
     font-weight: 500;
     text-align: center;
     color: #677294;
+    line-height: 1.5;
 }
 .servicesSec{
     margin-top:86px;
@@ -386,15 +389,16 @@ height:100%;
     height:228px;
 }
 .seeMoreBtn{
+    height:49px;
     width: 151px;
     border-radius: 24.5px;
     border: solid 0.5px #6d41e0;
     background-color: #f9f9fc;
     color:#6d41e0;
     font-size: 16px;
-    font-weight: 900;
-    box-shadow: 0 2px 13px 0 rgba(156, 0, 65, 0.04);
+    box-shadow: 0 2px 5px 0 rgba(156, 0, 65, 0.04);
     margin-top:36px;
+    line-height: 37px;
 }
 .seeMoreBtn:hover{
     color: #f9f9fc;
@@ -451,19 +455,20 @@ height:100%;
 .testInfo h4{
 
     font-size: 14px;
-    font-weight: 700;
+    font-family: Avenir-M;
     color: #000000;
     margin-bottom:10px;
 }
 .testInfo span{
     font-size: 13px;
-    font-weight: 500;
+    font-family: Avenir-M;
+
     color: #666666;
 }
 .testiDesc p{
 
     font-size: 14px;
-    font-weight: 500;
+    font-family: Avenir-M;
     color: #666666;
 }
 .testiDesc{
@@ -485,18 +490,28 @@ height:100%;
  .owl-nav button{
     color: #6d41e0 !important;
     position: absolute;
-    border:1px solid #c4c4c4 !important;
+    border:1px solid #D3D3D3 !important;
     border-radius:50%;
     width:43px;
     height:43px;
     line-height: 22px;
     background-color:white !important;
 }
+.TestiMonialsCarusel .owl-nav button{
+    width:44px;
+    height:44px;
+}
 .TestiMonialsCarusel .owl-stage-outer{
     padding:30px 5px
 }
 .owl-nav button span{
-    font-size: 28px !important;
+    font-size: 20px !important;
+    font-weight: bold;
+}.lni-chevron-left:before{
+    font-weight: bold;
+}
+.lni-chevron-right:before{
+    font-weight: bold;
 }
 .owl-nav button:hover {
   background-color:#6d41e0 !important;
@@ -563,13 +578,15 @@ transition: .5s all;
 }
 .TeamcarouselItem figcaption h4{
     font-size: 18px;
-    font-weight: 700;
+    font-family: Avenir-M;
     color: #ffffff;
     margin-bottom:3px;
 }
 .TeamcarouselItem figcaption span{
     color:white;
     font-size:13px;
+    font-family: Avenir-M;
+
 }
 #join{
     background-image:url("../images/A1.png");
@@ -632,9 +649,7 @@ margin-top:8px;
 }
 .BlogHeader span{
     font-size: 10px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
+    font-family: Avenir-M;
     line-height: 2.9;
     letter-spacing: normal;
     color: #677294;
@@ -643,7 +658,7 @@ margin-top:8px;
 
 .card-title{
     font-size: 19px;
-    font-weight: 400;
+    font-family: Avenir-M;
     line-height: 1.53;
     color: #222d39;
     margin-bottom:4px;
@@ -657,7 +672,7 @@ color:#5842dd
 }
 .card-text{
     font-size: 14px;
-    font-weight: 500;
+    font-family: Avenir-M;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.79;
@@ -668,11 +683,7 @@ color:#5842dd
 .readMore{
     margin:0;
     font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
+    font-family: Avenir-M;
     color: #000000;
     margin-right:5px;
 }
@@ -680,7 +691,8 @@ color:#5842dd
     color:#6d41e0
 }
 .card i{
-    font-size: 13px;;
+    font-size: 20px;
+    line-height: 2;
 }
 #Careers{
     padding-top:75px;
@@ -1037,16 +1049,19 @@ cursor: pointer;
 
   @keyframes move-the-circle {
     0% {
-      transform: translatex(0);
-      transform: translateY(0);
+      transform: translate(0,0);
     }
-    50% {
+    20% {
       transform: translate(20px,-10px)
-    
     }
-    70% {
-      transform: translate(10px, -5px)
-   
+    40%{
+      transform: translate(60px, -15px);
+    }
+    60%{
+        transform: translate(20px, -10px);
+    }
+    80%{
+        transform: translate(10px, -5px);
     }
       100% {
           transform: translate(0, 0);
