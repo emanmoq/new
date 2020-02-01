@@ -64,6 +64,7 @@ jQuery(function ($) {
           scrollTop = $(window).scrollTop();
         
            if( scrollTop >$('header').height()){
+             $("#counter").css("padding-top","150px");
               $('header').addClass('scrollNav');
         
         
