@@ -193,5 +193,7 @@ jQuery(function ($) {
               disableOnMobile: false,
               nativeOnMobile: false
             });
+            $(".close").click(function(){
+              $('.navbar-collapse').collapse("hide")})
 });
 
