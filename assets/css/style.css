@@ -165,7 +165,7 @@ button.navbar-toggler {
     height:12px;
     border-radius: 50%;
     position: absolute;
-    animation: move-the-circle 10s infinite;
+    animation: move-1 10s infinite;
 }
 .green{
     background-color: #008002;
@@ -1045,29 +1045,20 @@ cursor: pointer;
     width: 151px;
 }
 
-
-
-  @keyframes move-the-circle {
+@keyframes move-1{
     0% {
-      transform: translate(0,0);
+		transform: translate(0px,0);
+	}
+	50% {
+		transform: translate(60px,30px);
     }
-    20% {
-      transform: translate(20px,-10px)
-    }
-    40%{
-      transform: translate(60px, -15px);
-    }
-    60%{
-        transform: translate(20px, -10px);
-    }
-    80%{
-        transform: translate(10px, -5px);
-    }
-      100% {
-          transform: translate(0, 0);
-       
-        }
-  }
+
+	100% {
+		transform: translate(0px,0);
+	}
+}
+
+
 @keyframes slide0 {
     0%{
         top:25%;
@@ -1158,7 +1149,7 @@ cursor: pointer;
                 padding-bottom:50px;
             }
             .categ {
-                font-size:15px;
+                font-size:11px;
             }
     .counterNum{
     font-size:38px;
